@@ -4,7 +4,7 @@ from environment import reset, step
 app = FastAPI()
 
 @app.get("/")
-def root():
+def home():
     return {"message": "Email Triage API is running 🚀"}
 
 @app.post("/reset")
